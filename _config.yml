@@ -1,0 +1,17 @@
+# Site settings
+title: Traveler Security Wiki
+description: > # this means to ignore newlines until "baseurl:"
+  Documenting the customs, immigration, and security procedures around
+  the world. Know what you're getting into, what you're giving up, and
+  how security practices stack up.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# Build settings
+collections:
+  countries:
+    output: true
+    permalink: /country/:path/
+exclude: ["README.md"]
+highlighter: pygments
+markdown: kramdown
