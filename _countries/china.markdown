@@ -63,7 +63,7 @@ exit:
       - Ticket and passport are presented to a security agent. Picture is recorded, and stamp on ticket indicating passage through security screening is provided as you enter a screening area.
       - Bags are then passed through an X-ray scanner, and are manually reviewed.
       - All electronics, including computers, tablets, phones, cameras, batteries, and cords, must be removed from bags.
-      - Passengers pass through an X-ray screening, and then receive a manual pat-down before retrieving their carry-on items.
+      - Passengers pass through a metal detector, and then receive a manual pat-down before retrieving their carry-on items.
     biometrics:
       fingerprints: no
       camera: yes

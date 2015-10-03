@@ -40,14 +40,3 @@ exit:
       camera: yes
 categories: country
 ---
-
-<h3>Regional Notes:</h3>
-In Jammu & Kashmir, some airports enforce a "no carry-on luggage" policy, which
-limits carry-on to "women's purses" and laptops (not in bags). This policy is
-typically enforced at the entrance to the airport, before the check-in counter.
-At that step, all bags are passed through an x-ray, and are enforced
-'secure' before being returned to the passenger. This is done through
-tamper evident zip-ties attached keep zippers shut, and potentially straps added
-to keep luggage closed. You are unable to take bags with the zip-ties or straps
-through subsequent security steps, and are told you must check them at the
-check-in counter.
