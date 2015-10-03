@@ -14,7 +14,7 @@ layout: default
     {% for step in page.entry %}
       <section>
         <h2>{{ step.name }}</h2>
-        {% if step.biometrics %} <span class="biometrics">Biometrics Required: {{ step.biometrics }}</span>{% endif %}
+        {% include biometrics.html %}
         {% if step.restrictions %} <span class="restrictions">Restrictions: {{ step.restrictions }}</span>{% endif %}
         <p>{{ step.notes }}</p>
       </section>
@@ -26,7 +26,7 @@ layout: default
     {% for step in page.exit %}
       <section>
         <h2>{{ step.name }}</h2>
-        {% if step.biometrics %} <span class="biometrics">Biometrics Required: {{ step.biometrics }}</span>{% endif %}
+        {% include biometrics.html %}
         {% if step.restrictions %} <span class="restrictions">Restrictions: {{ step.restrictions }}</span>{% endif %}
         <p>{{ step.notes }}</p>
       </section>
