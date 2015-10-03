@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<div class="region">
+
+  <header class="header">
+    <h1 class="title">{{ page.region }}</h1>
+    <h2 class="title country">Part of {{ page.country }}</h2>
+    <p class="meta">Last updated {{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <article class="entry">
+    <h1>Entry</h1>
+    {% for step in page.entry %}
+      <section>
+        <h2>{{ step.name }}</h2>
+        {% if step.biometrics %} <span class="biometrics">Biometrics Required: {{ step.biometrics }}</span>{% endif %}
+        {% if step.restrictions %} <span class="restrictions">Restrictions: {{ step.restrictions }}</span>{% endif %}
+        <p>{{ step.notes }}</p>
+      </section>
+    {% endfor %}
+  </article>
+
+  <article class="exit">
+    <h1>Exit</h1>
+    {% for step in page.exit %}
+      <section>
+        <h2>{{ step.name }}</h2>
+        {% if step.biometrics %} <span class="biometrics">Biometrics Required: {{ step.biometrics }}</span>{% endif %}
+        {% if step.restrictions %} <span class="restrictions">Restrictions: {{ step.restrictions }}</span>{% endif %}
+        <p>{{ step.notes }}</p>
+      </section>
+    {% endfor %}
+  </article>
+
+  <article class="content">
+    {{ content }}
+  </article>
+
+</div>
