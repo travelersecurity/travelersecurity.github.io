@@ -10,7 +10,7 @@ entry:
       Presentation of Passport to immigration official.
       Receipt of visa stamp.
     biometrics:
-      fingerprints: 2
+      fingerprints: forefingers
       camera: yes
   - step:
     name: Customs

@@ -35,4 +35,5 @@ categories: region
 ---
 <h3>Notes</h3>
 Policies of baggage re-identification and carry-on luggage appear to be
-non-uniformly applied in the area.
+non-uniformly applied in the area. Carry-on was strictly controlled in Jammu
+in Summer 2015, but was not prohibited in Leh.
