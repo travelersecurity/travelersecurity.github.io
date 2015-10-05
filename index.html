@@ -4,15 +4,15 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Recent Updates</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for country in site.countries %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span class="post-meta">{{ country.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ country.url | prepend: site.baseurl }}">{{ country.country }}</a>
         </h2>
       </li>
     {% endfor %}
