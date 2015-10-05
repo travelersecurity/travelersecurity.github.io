@@ -1,0 +1,12 @@
+{% if step.biometrics %}
+<span class="biometrics">Biometrics Required:
+  {% if step.biometrics.camera %}
+    <img src="/images/photo.png" title="Photo Taken" />
+  {% endif %}
+  {% if step.biometrics.fingerprints %}<img src="/images/fingerprint-scan.png" />
+    {% if step.biometrics.fingerprints != true %}
+    ({{step.biometrics.fingerprints}})
+    {% endif %}
+  {% endif %}
+</span>
+{% endif %}
