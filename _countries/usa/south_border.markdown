@@ -1,10 +1,11 @@
 ----
 layout: region
 country: USA
-region: Southern Border
+region: South_Border
 date:   2015-10-03
-internal:
-  - step:
+process:
+  internal:
+  -
     name: Random Vehicle Search
     notes: >
       Vehicles and people traveling within 100mi (161km) of US borders are
