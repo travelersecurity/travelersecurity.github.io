@@ -8,29 +8,19 @@ layout: default
     <p class="meta">Last updated {{ page.date | date: "%b %-d, %Y" }}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
-  <article class="entry">
-    <h1>Entry</h1>
-    {% for step in page.entry %}
-      <section>
-        <h2>{{ step.name }}</h2>
-        {% if step.biometrics %} <span class="biometrics">Biometrics Required: {{ step.biometrics }}</span>{% endif %}
-        {% if step.restrictions %} <span class="restrictions">Restrictions: {{ step.restrictions }}</span>{% endif %}
-        <p>{{ step.notes }}</p>
-      </section>
+  {% for event in page.process %}
+    <article class={{event[0]}}>
+      <h1>{{ event[0] }}</h1>
+      {% for step in event[1] %}
+        <section>
+          <h2>{{ step.name }}</h2>
+          {% if step.biometrics %} <span class="biometrics">Biometrics Required: {{ step.biometrics }}</span>{% endif %}
+          {% if step.restrictions %} <span class="restrictions">Restrictions: {{ step.restrictions }}</span>{% endif %}
+          <p>{{ step.notes }}</p>
+        </section>
+      {% endfor %}
+    </article>
     {% endfor %}
-  </article>
-
-  <article class="exit">
-    <h1>Exit</h1>
-    {% for step in page.exit %}
-      <section>
-        <h2>{{ step.name }}</h2>
-        {% if step.biometrics %} <span class="biometrics">Biometrics Required: {{ step.biometrics }}</span>{% endif %}
-        {% if step.restrictions %} <span class="restrictions">Restrictions: {{ step.restrictions }}</span>{% endif %}
-        <p>{{ step.notes }}</p>
-      </section>
-    {% endfor %}
-  </article>
 
   <article class="content">
     {{ content }}
